@@ -50,10 +50,15 @@
     padding: 6px 16px;
     font-size: 16px;
     font-weight: 500;
+    transition: ease 0.5s;
+}
+
+.nav-button:hover {
+    background: #6385BC;
 }
 
 .home-hero {
-    height: 90vh;
+    height: 85vh;
     text-align: center;
 }
 
