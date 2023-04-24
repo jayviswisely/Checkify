@@ -20,6 +20,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2vw;
+    width: 100vw;
 }
 
 .nav > img {
@@ -35,7 +36,7 @@
 .nav-item {
     padding: 0 1.5vw;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .active {
@@ -96,4 +97,92 @@
 .hero-button:hover {
     background-color: #5159A3;
     color: #EBEBEB;
+}
+
+/* Tablet  Responsivity */
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .nav {
+        height: 8vh;
+        padding: 0 4vw;
+        width: 100%;
+    }
+
+    .home {
+        height: 60vh;
+    }
+
+    .home-hero {
+        height: 52vh;
+    }
+
+    .nav-button {
+        font-size: 20px;
+    }
+
+    .hero-title {
+        font-size: 64px;
+        padding-left: 18vw;
+        padding-right: 18vw;
+        padding-top: 7vh;
+    }
+
+    .hero-desc {
+        font-size: 24px;
+        padding-left: 25vw;
+        padding-right: 25vw;
+        padding-top: 2vh;
+        padding-bottom: 3vh;
+    }
+
+    .hero-button {
+        font-size: 34px;
+    }
+}
+
+/* Home Responsivity */
+
+@media only screen and (max-width: 1024px) {
+
+    .home {
+        height: 80vh;
+    }
+
+    .home-hero {
+        height: 70vh;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav {
+        height: 10vh;
+        padding-left: 3vw;
+    }
+
+    .hero-title {
+        padding-top: 6vh;
+        padding-left: 7vw;
+        padding-right: 7vw;
+        font-size: 44px;
+        padding-bottom: 1vh;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+        padding-top: 0;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .hero-button {
+        font-size: 30px;
+        padding: 9px 40px;
+    }
+    
 }
