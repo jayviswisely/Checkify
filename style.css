@@ -20,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2vw;
-    width: 100vw;
+    width: 100%;
 }
 
 .nav > img {
@@ -99,6 +99,69 @@
     color: #EBEBEB;
 }
 
+/* Download Section */
+
+.download {
+    height: 100vh;
+}
+
+.download-container {
+    padding-top: 30vh;
+    height: 70vh;
+    display: flex;
+}
+
+.download-text {
+    width: 65%;
+    padding-left: 5vw;
+}
+
+.download-step {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
+
+.download-step > img {
+    height: 40px;
+    padding-right: 1vw;
+}
+
+.download-step > h2 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.download-button-container {
+    padding-top: 7vh;
+    padding-left: 3vw;
+}
+
+.download-button {
+    background-color: #A0BDED;
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+    padding: 8px 26px;
+    font-size: 26px;
+    font-weight: 500;
+    transition: ease 0.5s;
+}
+
+.download-button:hover {
+    background: #6385BC;
+}
+
+.download-img {
+    width: 35%;
+    height: 40vh;
+    background-image: url(./Assets/illustration.png);
+    background-repeat: no-repeat;
+    background-size: 25vw;
+    background-position: left top;
+}
+
 /* Tablet  Responsivity */
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
@@ -142,7 +205,7 @@
 
 /* Home Responsivity */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
 
     .home {
         height: 80vh;
