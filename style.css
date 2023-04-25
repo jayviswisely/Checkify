@@ -185,7 +185,7 @@
 
 .desc {
     border-top: 3px solid black;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     padding-top: 10vh;
     padding-left: 8vw;
@@ -230,7 +230,7 @@
 /* Footer Section */
 
 .footer {
-    height: 65vh;
+    height: 70vh;
     background-color:#E5DE00CF;
     padding-left: 7vw;
     padding-right: 7vw;
@@ -238,7 +238,7 @@
 }
 
 .footer-content {
-    height: 45vh;
+    height: 50vh;
     border-bottom: 2px solid black;
     display: flex;
 }
