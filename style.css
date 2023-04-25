@@ -58,6 +58,25 @@
     background: #6385BC;
 }
 
+.nav-hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-list-mobile {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
 .home-hero {
     height: 85vh;
     text-align: center;
@@ -216,7 +235,23 @@
     padding-left: 7vw;
     padding-right: 7vw;
     padding-top: 6vh;
+}
+
+.footer-content {
+    height: 45vh;
+    border-bottom: 2px solid black;
     display: flex;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14vh;
+}
+
+.footer-copyright > p {
+    color: #00000085;
 }
 
 .footer-branding {
@@ -383,11 +418,70 @@
     .desc-section > i {
         padding-bottom: 1vh;
     }
+
+    .footer {
+        height: 45vh;
+        padding-top: 5vh;
+    }
+
+    .footer-content {
+        height: 30vh;
+    }
+
+    .footer-copyright {
+        height: 10vh;
+    }
+
+    .footer-branding {
+        width: 40%;
+        padding-right: 5vw;
+    }
+
+    .footer-links {
+        width: 60%;
+    }
+
+    .footer-contact > h3 {
+        font-size: 20px;
+        padding-bottom: 1vh;
+    }
+    
+    .footer-contact > p {
+        font-size: 18px;
+        padding-bottom: 1vh;
+    }
+
+    .footer-link > h1 {
+        font-size: 22px;
+    }
+
+    .footer-link-container > a {
+        font-size: 22px;
+        padding: 0.5vh 0;
+    }
 }
 
 /* Mobile Responsivity */
 
 @media only screen and (max-width: 767px) {
+    .nav-hamburger {
+        display: block;
+        position: fixed;
+        right: 3vw;
+    }
+
+    .nav-hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
     .home {
         height: 80vh;
     }
@@ -400,17 +494,66 @@
         display: none;
     }
 
-    .nav-list {
-        display: none;
+    .nav-list-mobile {
+        background-color: #f9ffd1;
+        position: fixed;
+        transition: 0.5s;
+        top: -100%;
+        height: 50vh;
+        display: flex;
+        padding-top: 10vh;
+        width: 100%;
+    }
+
+    .nav-links-mobile {
+        width: 33%;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .nav-list-mobile.active {
+        top: 0;
+    }
+
+    .nav-links-mobile > h1 {
+        font-size: 20px;
+        padding-bottom: 2vh;
+    }
+
+    .nav-link-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-link-container > a {
+        text-decoration: none;
+        font-weight: 300;
+        color: black;
+        padding: 1vh 0;
+        font-size: 14px;
     }
 
     .nav {
         height: 10vh;
         padding-left: 3vw;
+        padding-right: 3vw;
+        position: fixed;
+    }
+
+    .nav.active {
+        background-color: transparent;
+    }
+
+    .nav.active > img {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
     }
 
     .hero-title {
-        padding-top: 6vh;
+        padding-top: 16vh;
         padding-left: 7vw;
         padding-right: 7vw;
         font-size: 44px;
@@ -428,7 +571,6 @@
         font-size: 30px;
         padding: 9px 40px;
     }
-
 
     .download {
         height: 50vh;
@@ -460,5 +602,39 @@
 
     .desc-section {
         width: 90%;
+    }
+
+    .footer-links {
+        display: none;
+    }
+
+    .footer-branding {
+        width: 100%;
+        padding-right: 5vw;
+    }
+
+    .footer {
+        height: 50vh;
+    }
+
+    .footer-copyright {
+        height: 9vh;
+    }
+
+    .footer-copyright > p {
+        font-size: 12px;
+    }
+
+    .footer-content {
+        height: 35vh;
+    }
+
+    .footer-brand > p {
+        font-size: 16px;
+        padding-left: 4vw;
+    }
+
+    .footer-contact {
+        padding-top: 5vh;
     }
 }
