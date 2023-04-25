@@ -497,12 +497,16 @@
     .nav-list-mobile {
         background-color: #f9ffd1;
         position: fixed;
-        transition: 0.5s;
         top: -100%;
         height: 50vh;
         display: flex;
         padding-top: 10vh;
         width: 100%;
+        transition: none;
+    }
+
+    .nav-list-mobile.active {
+        transition: 0.5s;
     }
 
     .nav-links-mobile {
